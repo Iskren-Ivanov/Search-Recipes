@@ -6,7 +6,7 @@ const RecipeBox = ({ recipeData, showDetails }) => {
         <div className="recipes-box"
             onClick={(event) => showDetails(event, recipeData)}>
             <h1>{recipeData.recipe.Loaderlabel}</h1>
-            <p className="caloriesRecipes">Calories: {recipeData.recipe.calories.toFixed(2)}</p>
+            <p className="calories-recipes">Calories: {recipeData.recipe.calories.toFixed(2)}</p>
             <div className="details-container">
                 <img className="recipe-image" src={recipeData.recipe.image} alt="Loading..." />
                 {recipeData.recipe.ingredients.map((ingredient) =>
@@ -19,7 +19,7 @@ const RecipeBox = ({ recipeData, showDetails }) => {
     if (recipeData.recipe?.noClick === false) {
         box = (<div className="recipes-box">
             <h1>{recipeData.recipe.Loaderlabel}</h1>
-            <p className="caloriesRecipes">Calories: {recipeData.recipe.calories.toFixed(2)}</p>
+            <p className="calories-recipes">Calories: {recipeData.recipe.calories.toFixed(2)}</p>
             <div className="details-container">
                 <img className="recipe-image" src={recipeData.recipe.image} alt="Loading..." />
                 {recipeData.recipe.ingredients.map((ingredient) =>

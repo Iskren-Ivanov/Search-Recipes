@@ -3,7 +3,7 @@ import './Recipe.css';
 
 const Recipe = ({ location }) => {
     const { label, calories, image, ingredients, cautions, dietLabels, healthLabels } = location.state;
-    
+
     return (
         <div className="recipe-container">
             <h1 >{label}</h1>
@@ -11,8 +11,8 @@ const Recipe = ({ location }) => {
             <div className="info-recipe">
                 <div className="info-box-left">
                     Cautions: {cautions.map((caution) => (
-                    <li>{caution}</li>
-                ))}
+                        <li>{caution}</li>
+                    ))}
                 </div>
                 <div className="info-box-center">Diet Labels: {dietLabels.map(label => (
                     <li>{label}</li>
@@ -20,8 +20,8 @@ const Recipe = ({ location }) => {
                 </div>
                 <div className="info-box-right">
                     Health Labels: {healthLabels.map((label) => (
-                    <li>{label}</li>
-                ))}
+                        <li>{label}</li>
+                    ))}
                 </div>
             </div>
             <img className="recipe-image" src={image} alt="Loading..." />

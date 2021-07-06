@@ -1,9 +1,9 @@
-.App {
+.app {
   height: 100vh;
   text-align: center;
 }
 
-.App-header {
+.app-header {
   background: #ffefa0;
   min-height: 100vh;
   display: flex;
