@@ -35,8 +35,11 @@ const Recipes = () => {
     const getRecipes = async () => {
         try {
             setLoading(true);
-            const data = await fetch(`https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${searchTerm}&app_id=${appID}&app_key=${appKey}`)
-                .then(res => res.json());
+            const data = await fetch(`https://api.edamam.com/search?q=${searchTerm}&app_id=${appID}&app_key=${appKey}`)
+                .then(res => {
+                    debugger;
+                    return res.json()
+                });
             if (!data.hits.length) {
                 setRecipes(defaultRecipies);
             } else {

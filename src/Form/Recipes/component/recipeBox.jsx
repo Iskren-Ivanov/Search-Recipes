@@ -27,7 +27,7 @@ const RecipeBox = ({ recipeData, showDetails }) => {
                 )}
             </div>
         </div>)
-    }
+    };
 
     return box;
 };

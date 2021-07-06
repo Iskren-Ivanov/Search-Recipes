@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Recipes from './Form/Recipes/Recipes';
 import CustomRouter from './CustomRouter/Router';
 import { NotificationContainer } from 'react-notifications';
 
